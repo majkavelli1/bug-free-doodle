@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        5 ques
+    </title>
+
+    <script src=
+                    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var max_length = 15;
+            $('#textarea').keyup(function () {
+                var len = max_length - $(this).val().length;
+                $('.GFG').text(len);
+            });
+
+        });
+    </script>
+</head>
+<body>
+<form>
+    <label>Maximum 15 characters</label>
+    <textarea id="textarea" maxlength="15"></textarea> <span class="GFG">15</span> characters remaining
+</form>
+</body>
+</html>

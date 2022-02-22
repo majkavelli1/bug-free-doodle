@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+        1 ques
+    </title>
+    <script src=
+                    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#toggle").change(function(){
+                if($(this).is(':checked')){
+                    $("#password").attr("type","text");
+                    $("#toggleText").text("Hide");
+                }else{
+                    $("#password").attr("type","password");
+                    $("#toggleText").text("Show");
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+<input type='password' id='password' >&nbsp;
+<input type='checkbox' id='toggle' value='0' onchange='togglePassword(this);'>&nbsp; <span id='toggleText'>Show</span></td>
+</body>
+</html>

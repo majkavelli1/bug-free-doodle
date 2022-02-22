@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        7 ques
+    </title>
+
+    <script src=
+                    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+
+</head>
+<body>
+<button id="btn1">Animate height & width</button>
+<button id="btn2">Reset</button>
+<div id="box" style="background:red;height:100px;width:100px;margin:6px;"></div>
+</body>
+<script>
+    $("#btn1").click(function () {
+        $("#box").animate({
+            width: "300px",
+            height: "300px",
+        }, 1500);
+    });
+
+    $("#btn2").click(function () {
+        $("#box").animate({
+            width: "100px",
+            height: "100px",
+        }, 1500);
+    });
+</script>
+</html>
